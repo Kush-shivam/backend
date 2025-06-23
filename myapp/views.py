@@ -8,3 +8,19 @@ def home(request):
 def contact(request):
 
     return render(request,'contact.html')
+
+def about(request):
+
+    return render(request,'about.html')
+
+def bike(request):
+
+    return render(request,'bike.html')
+
+def car(request):
+
+    return render(request,'car.html')
+
+def mahindra(request):
+
+    return render(request,'mahindra.html')
