@@ -24,3 +24,27 @@ def car(request):
 def mahindra(request):
 
     return render(request,'mahindra.html')
+
+def ola(request):
+
+    return render(request,'ola.html')
+
+def revolt(request):
+
+    return render(request,'revolt.html')
+
+def royal(request):
+
+    return render(request,'royal.html')
+
+def tata(request):
+
+    return render(request,'tata.html')
+
+def tork(request):
+
+    return render(request,'tork.html')
+
+def tvs(request):
+
+    return render(request,'tvs.html')
