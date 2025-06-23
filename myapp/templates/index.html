@@ -1,0 +1,197 @@
+
+{% extends "base.html" %}
+{% block style %}
+<link rel="stylesheet" href="/static/2style.css">
+{% endblock style %}
+
+{% block content %}
+ 
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/car.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>CARS</h5>
+                    <p>Life is a road trip, and your car is the trustly steed.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/bike2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-block">
+                    <h5>BIKES</h5>
+                    <p>Life is a journey, make the most of it on two wheels.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-title="apple">
+                <img src="img/ev.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Electric CAR</h5>
+                    <p>Charged and ready to drive the future.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="product">
+        <div class="container-fluid">
+            <div class="row">
+                <h1><u>MOST PURCHASED VEHICLES</u></h1>
+                <div class="col-md-6">
+                    <h2>CAR</h2>
+                    <div class="card">
+                        <img src="img/c1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mahindra XUV700</h5>
+                            <p class="card-text">The Mahindra XUV700 is a flagship SUV that combines bold design,
+                                advanced technology, and robust performance. Launched in August 2021, it offers a
+                                premium driving experience with a range of features catering to both comfort and safety.
+
+                            </p>
+                            <li>Engine Options: 2.0L Turbo Petrol (197 bhp) and 2.2L Turbo Diesel (153–182 bhp)</li>
+                            <li>Safety Rating: 5-star Global NCAP</li>
+                            <li>Drive Type: FWD or AWD (selected variants)</li>
+                            <li>Ground Clearance: 200 mm</li>
+                            <a href="mahindra.html" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>BIKE</h2>
+                    <div class="card">
+                        <img src="img/re1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Enfield Hunter 350</h5>
+                            <p class="card-text">The Royal Enfield Hunter 350 is a nimble, retro-style roadster built
+                                for urban rides.
+                                Powered by a 349cc engine, it delivers smooth performance with a thumpy exhaust note.
+                                With agile handling and bold design, it's perfect for city commutes and casual
+                                touring.
+
+                            </p>
+                            <li>Engine: 349cc, single-cylinder</li>
+                            <li>Top Speed: ~114 km/h</li>
+                            <li>Mileage: ~36 km/l</li>
+                            <li>Fuel Tank: 13 L</li>
+                            <a href="royal.html" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <h1><u> OUR TIE UPS </u></h1>
+    <section class="cards">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/lg1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>MAHINDRA MOTORS</b></h5>
+                            <p class="card-text">We believe that ‘doing good’ goes beyond
+                                philanthropy and CSR. It is more than just random acts of kindness. <br> </p> <br>
+                            <a href="https://auto.mahindra.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/lg2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>TATA MOTORS</b></h5>
+                            <p class="card-text">Tata Motors is known for delivering best quality products that give
+                                value for years to come. Our service products are also designed on the same philosophy.
+                            </p>
+                            <a href="https://cars.tatamotors.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/lg3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>TVS MOTORS</b></h5>
+                            <p class="card-text">TVS Motor has footprints globally, including geographies like Middle
+                                East, Africa, SE Asia, Indian subcontinent, Latin & Central America.</p>
+                            <a href="https://www.tvsmotor.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/lg4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>ROYAL ENFIELD</b></h5>
+                            <p class="card-text">The oldest motorcycle brand in continuous production, Royal Enfield
+                                made its first motorcycle in 1901.<br></p><br>
+                            <a href="https://www.royalenfield.com/in/en/home/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="left col-md-3">
+                    <div class="card">
+                        <img src="img/lg5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>OLA ELECTRICS</b></h5>
+                            <p class="card-text">We are an EV company building towards a brighter, safer and
+                                greener
+                                future.Building an All-electric Future. From India. For the world.
+
+                            </p>
+                            <a href="https://www.olaelectric.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/lg6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>TORK MOTORS</b></h5>
+                            <p class="card-text">Tork Motors has been persistent in its approach of Make/Develop
+                                in
+                                India for the world.Built with optimum system integration for optimum
+                                performance.
+                            </p>
+                            <a href="https://torkmotors.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right col-md-3">
+                    <div class="card">
+                        <img src="img/lg7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>REVOLT MOTORS</b></h5>
+                            <p class="card-text">Revolt bikes’ lithium-ion batteries have been made keeping in
+                                mind
+                                the
+                                riding behavior and usage of the Indian riders.
+
+                            </p><br>
+                            <a href="https://www.revoltmotors.com/" class="btn btn-primary">Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock content %}

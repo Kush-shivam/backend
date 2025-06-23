@@ -1,0 +1,65 @@
+link = domain
+server : handles multiple{millions} requests at a time , always connected to lan or internet , always open
+dns : domain name system : check and improve the correct name of domain
+cloudflare gives one free unofficial web domain.
+.py is faster and beggener's extenstion which means python, .pyt is advanced version of python includeing extra parts
+pip is library function of python.
+>>>pip install django    // to install django
+>>django-admin startproject my_project .    //'.'is used to initialize file on current folder
+>>django-admin startapp myapp
+>> python manage.py runserver      //creating test server
+in settings do : '*' in allowed_host //to allow all hosts
+                 add your app_name in installed apps 
+                 
+                 your htmlfile in templates : 'BASE_DIR /myapp/templates'
+                 time_zone :Asia/Kolkata
+                 use_tz = False
+                 static_url ='static/'
+                .... STATICFILES_DIRS =
+                [
+                    BASE_DIR/'myapp/static',
+                ]
+                create static and templates folder in myapp : html files in templates and css in static
+do in urls :from django.urls import path, include 
+            in myapps create urls.py
+            in urlpatterns = 
+                add: path('',include('myapp.urls'))
+in myapp in views:def home(request):
+                    return render(request,'index.html')
+         in urls : write : from django.urls import path
+                            from .views import *
+                            urlpatterns =[
+                                path('',home, name ="home")
+                            ]
+
+in html file before declaring html write {% load static %}       and change css path as /static/.css
+or write {% static '/style.css'%}                       
+ make a base file for inheriting header and footer in all other html files
+ and add only header and footer files in it. between header and footer write = {% block content %}{% endblock content %}
+
+ in other files use {% extends "base.html" %}    and write all content inside :{% block content %}  write here    {% endblock content %}
+
+
+
+
+
+
+
+
+ >>>python manage.py makemigrations    ///to commit changes
+ >>>python manage.py migrate   //to push changes
+ >>>python manage.py createsuperuser  //making user to access the database
+ creating custom model for contact form submission:
+    make model.py in myapp
+    code> from django.db import model
+          class ContactDetails(models.Model):
+          name=models.CharField(max_length=100)
+          phoneno=models.CharField(max_length=13)
+          email=models.EmailField()
+          messege=models.TextField()  ///commit and save
+in myapp in admin.py write :
+                    from .model import *
+                    class AdminContactDetail(admin.ModelAdmin): 
+                    list_display = ['id','name',phoneno',etc]
+                    admin.site.register(ContactDetails,AdminContactDetail)         
+                    

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <section class="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <h1><u>CONTACT US</u></h1>
+                <div class="col-md-6">
+                    <h2 class="heed">WE ARE HERE</h2>
+                    <iframe class="framee"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.173087810704!2d85.34076977515069!3d23.34574292894863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e191c9fa101f%3A0xb91bab2187823817!2sChutia%2C%20Gosaintola%2C%20Ranchi%2C%20Jharkhand%20834001!5e0!3m2!1sen!2sin!4v1749924559364!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="heed">CONTACT FORM</h2>
+                    <form id="contactForm" class="forme" method='POST'>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                        <br>
+                        <label for="mobile number">Phone no:</label>
+                        <input type="number" id="pno" name="pno" required />
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <br>
+                        <button  type="submit">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}
