@@ -17,8 +17,12 @@ def contact(request):
           email=email,
           messege=message  
         )
-        return redirect('/')
+        return redirect('/thank/')
     return render(request,'contact.html')
+
+def thank(request):
+
+    return render(request,'thank.html')
 
 def about(request):
 

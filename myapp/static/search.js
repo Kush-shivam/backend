@@ -76,9 +76,3 @@ function searchPage(event) {
         alert("We do not deal with vehicle you mentioned");
     }
 }
-
-
-function submitPage(event) {
-    event.preventDefault();
-    alert("your message has been sent. Thank you for contacting.");
-}
